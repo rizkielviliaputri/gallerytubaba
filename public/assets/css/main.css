@@ -1,0 +1,873 @@
+/*========== Font Family ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*========== Navbar ==========*/
+.navbar img {
+  width: 19px;
+  height: 25px;
+}
+
+.navbar #navb ul li a {
+  color: #FFFFFF;
+}
+
+.navbar #navb ul li a.active {
+  color: #E3AC59;
+}
+
+.navbar #navb ul li a:hover {
+  color: #E3AC59;
+}
+
+.navbar #navb .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar #navb .dropdown .dropdown-menu {
+  display: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* Links inside the dropdown */
+}
+
+.navbar #navb .dropdown .dropdown-menu .dropdown-item {
+  color: black;
+}
+
+.navbar #navb .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #E3AC59;
+  background-color: transparent !important;
+}
+
+.navbar #navb .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*========== Hero Carousel ==========*/
+.carousel {
+  overflow: hidden;
+}
+
+.carousel .carousel-indicators {
+  margin-bottom: 2px;
+}
+
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel .carousel-inner .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.carousel .carousel-inner .overlay .caption {
+  top: 30%;
+  left: 10%;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 3;
+}
+
+.carousel .carousel-inner .overlay .caption img {
+  width: 90px;
+  height: 122px;
+}
+
+.carousel .carousel-inner .overlay .caption h5 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFFFFF;
+  text-shadow: 0 2px 5px rgba(65, 64, 66, 0.6);
+}
+
+.carousel .carousel-inner .overlay .caption p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  text-shadow: 0 2px 5px rgba(65, 64, 66, 0.6);
+  margin-bottom: -1%;
+  margin-top: -2%;
+}
+
+.carousel .carousel-inner .overlay .caption2 {
+  width: 500px;
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 40%;
+}
+
+.carousel .carousel-inner .overlay .caption2 p {
+  font-family: "Times New Roman";
+  font-weight: normal;
+  font-size: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.carousel .carousel-inner .carousel-item {
+  -webkit-transition: opacity .1s ease-out, -webkit-transform 1s ease;
+  transition: opacity .1s ease-out, -webkit-transform 1s ease;
+  transition: transform 1s ease, opacity .1s ease-out;
+  transition: transform 1s ease, opacity .1s ease-out, -webkit-transform 1s ease;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*========== Berita Terbaru ==========*/
+.berita-terbaru {
+  overflow: hidden;
+}
+
+.berita-terbaru .judul-section {
+  padding-top: 1%;
+}
+
+.berita-terbaru .judul-section h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e3ac59;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
+}
+
+.berita-terbaru .judul-section p {
+  font-size: 15px;
+  font-family: "Times New Roman";
+  font-weight: normal;
+  color: #000;
+}
+
+.berita-terbaru .berita-isi .card {
+  height: 350px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.berita-terbaru .berita-isi .card img {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+}
+
+.berita-terbaru .berita-isi .card h5 {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  color: #000000;
+  margin-top: -4%;
+}
+
+.berita-terbaru .berita-isi .card .overlay-2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  overflow: hidden;
+  border-radius: 10px;
+  visibility: hidden;
+  width: 0%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.berita-terbaru .berita-isi .card .overlay-2 p {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 10px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.berita-terbaru .berita-isi .card .berita-keterangan {
+  font-size: 10px;
+  color: #EE143A;
+}
+
+.berita-terbaru .berita-isi .card:hover .overlay-2 {
+  visibility: visible;
+  width: 100%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.berita-terbaru .read-more button {
+  background-color: #EE143A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+
+.berita-terbaru .read-more button p {
+  margin: 5px;
+  font-size: 12px;
+}
+
+.berita-terbaru .read-more button:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  background-color: #d10e2f;
+}
+
+.berita-terbaru .read-more button:hover p i {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+/*========== Sambutan ==========*/
+.film {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.film video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.film .overlay-3 {
+  position: absolute;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  z-index: 3;
+}
+
+.film .overlay-3 p {
+  width: 50%;
+  text-align: justify;
+}
+
+.film .overlay-3 .btn {
+  background-color: #EE143A;
+  border: none;
+}
+
+.film .overlay-3 .btn:hover {
+  background-color: #d10e2f;
+}
+
+/*========== Sambutan ==========*/
+.sambutan {
+  overflow: hidden;
+  margin-top: 2%;
+  /*========== Sambutan Tab ==========*/
+}
+
+.sambutan .container {
+  background-color: #F5F8FA;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.sambutan .tab {
+  overflow: hidden;
+}
+
+.sambutan .tab button {
+  background-color: transparent;
+  height: 3em;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-right: 2%;
+  color: black;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.sambutan .tab button:hover {
+  color: #E3AC59;
+}
+
+.sambutan .tab button.active {
+  background-color: #ccc;
+}
+
+.sambutan .tabcontent .kata-kata {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+
+.sambutan .tabcontent .card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 60px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.sambutan .tabcontent .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sambutan .tabcontent .card:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer {
+  position: relative;
+}
+
+footer .sosial-media {
+  background-color: #363535;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  padding: 0.5%;
+}
+
+footer .sosial-media img {
+  width: 15em;
+  height: 4em;
+}
+
+footer .sosial-media h5 {
+  font-size: 0.8em;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .sosial-media .sosial-media-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+footer .sosial-media .sosial-media-icon a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #E3AC59;
+}
+
+footer .sosial-media .sosial-media-icon a:hover {
+  color: #FFFFFF;
+}
+
+footer .copyright {
+  background-color: #CCCCCC;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  min-height: 2em;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .copyright p {
+  margin: auto;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* ==================== Page Berita ==================== */
+/* ===================================================== */
+header .berita-header-judul {
+  background-image: url(../images/back-header.png);
+  background-color: black;
+  padding-top: 3.5em;
+  background-size: cover;
+}
+
+header .berita-header-judul h1 {
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+header .berita-header-judul .breadcrumb {
+  color: #FFFFFF;
+  background: none;
+  font-size: 1em;
+}
+
+header .berita-header-judul .breadcrumb .breadcrumb-item.active {
+  color: #E3AC59;
+}
+
+main .berita-isi .berita-list .card {
+  border: none;
+}
+
+main .berita-isi .berita-list .card a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+main .berita-isi .berita-list .card a .card-body img {
+  border-radius: 5px;
+  width: 100%;
+  height: 8em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .berita-isi .berita-list .card a .card-body .card-title {
+  margin-left: -15px;
+  font-size: 1.25em;
+}
+
+main .berita-isi .berita-list .card a .card-body .berita-keterangan {
+  font-size: 0.5em;
+  color: #EE143A;
+}
+
+main .berita-isi .berita-list .card a .card-body .caption {
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+main .berita-isi .right-content .card {
+  border: none;
+  margin-bottom: 3em;
+}
+
+main .berita-isi .right-content .card .card-title h5 {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .berita-isi .right-content .card .card-title h5 i {
+  margin-left: auto;
+  color: #EE143A;
+}
+
+main .berita-isi .right-content .card .card-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main .berita-isi .right-content .card .card-text ul a {
+  text-decoration: none;
+}
+
+main .berita-isi .right-content .card .card-text ul a li {
+  color: #363535;
+  font-size: 0.8em;
+  border-radius: 5px;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+}
+
+main .berita-isi .right-content .card .card-text ul a li .caption {
+  border-radius: 5px;
+  background-color: #6C6C6C;
+  color: #FFFFFF;
+  width: 15%;
+  text-align: center;
+}
+
+main .berita-isi .right-content .card .card-text a {
+  text-decoration: none;
+}
+
+main .berita-isi .right-content .card .card-text a .card {
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+main .berita-isi .right-content .card .card-text a .card img {
+  width: 100%;
+  height: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+main .berita-isi .right-content .card .card-text a .card h5 {
+  color: #363535;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+main .berita-isi .right-content .card .card-text a .card p {
+  font-size: 0.5em;
+  color: #EE143A;
+}
+
+main .berita-isi .pagination-outer {
+  text-align: center;
+}
+
+main .berita-isi .pagination {
+  font-family: 'Bree Serif', serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  z-index: 1;
+}
+
+main .berita-isi .pagination li a.page-link {
+  color: #EE143A;
+  background: transparent;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0.1s;
+  transition: all 0.3s ease 0.1s;
+}
+
+main .berita-isi .pagination li a.page-link:hover {
+  color: #fff;
+  background: #EE143A;
+  -webkit-box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
+}
+
+main .berita-isi .pagination li a.page-link:hover:before {
+  height: 100%;
+  width: 100%;
+  border-color: #EE143A;
+}
+
+main .berita-isi .pagination li a.page-link:hover:after {
+  height: 100%;
+  width: 100%;
+  border-color: #EE143A;
+}
+
+main .berita-isi .pagination li a.page-link:focus {
+  color: #fff;
+  background: #EE143A;
+  -webkit-box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
+}
+
+main .berita-isi .pagination li a.page-link:before {
+  content: '';
+  border: 2px solid #e1e1e1;
+  border-right: none;
+  border-bottom: none;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+main .berita-isi .pagination li a.page-link:after {
+  content: '';
+  border: 2px solid #e1e1e1;
+  border-right: none;
+  border-bottom: none;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #e1e1e1;
+  border-top: none;
+  border-left: none;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+main .berita-isi .pagination li:first-child a.page-link {
+  font-size: 35px;
+  line-height: 23px;
+  border: 2px solid #EE143A;
+}
+
+main .berita-isi .pagination li:first-child a.page-link:before {
+  display: none;
+}
+
+main .berita-isi .pagination li:first-child a.page-link:after {
+  display: none;
+}
+
+main .berita-isi .pagination li:last-child a.page-link {
+  font-size: 35px;
+  line-height: 23px;
+  border: 2px solid #EE143A;
+}
+
+main .berita-isi .pagination li:last-child a.page-link:before {
+  display: none;
+}
+
+main .berita-isi .pagination li:last-child a.page-link:after {
+  display: none;
+}
+
+main .berita-isi .pagination li.active a.page-link {
+  color: #fff;
+  background: #EE143A;
+  -webkit-box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.16);
+}
+
+main .berita-isi .pagination li.active a.page-link:before {
+  height: 100%;
+  width: 100%;
+  border-color: #EE143A;
+}
+
+main .berita-isi .pagination li.active a.page-link:after {
+  height: 100%;
+  width: 100%;
+  border-color: #EE143A;
+}
+
+@media only screen and (max-width: 480px) {
+  main .berita-isi .pagination {
+    display: block;
+  }
+  main .berita-isi .pagination li {
+    display: inline-block;
+    margin: 0 0 10px;
+  }
+}
+
+/* ==================== .Page Berita ==================== */
+/* ===================================================== */
+/* ==================== Page Berita Detail ==================== */
+/* ===================================================== */
+#berita-isi-detail .card.berita-detail {
+  min-height: 200px;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  padding: 2%;
+  background-color: #FFFFFF;
+}
+
+#berita-isi-detail .card.berita-detail .berita-keterangan {
+  font-size: 0.7em;
+  color: #EE143A;
+}
+
+#berita-isi-detail .card.berita-detail img {
+  width: 100%;
+  max-height: 500px;
+}
+
+#berita-isi-detail .card.berita-detail p {
+  font-size: 0.75em;
+}
+
+/* ==================== .Page Berita Detail ==================== */
+/* ===================================================== */
+/* ========== Galeri ========== */
+/* ============================ */
+.gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 80vh;
+}
+
+.gallery-wrap .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  -webkit-transition: -webkit-box-flex 0.8s ease;
+  transition: -webkit-box-flex 0.8s ease;
+  transition: flex 0.8s ease;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+}
+
+.gallery-wrap .item:hover {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.gallery-wrap .item-1 {
+  background-image: url(../images/item1.JPG);
+}
+
+.gallery-wrap .item-2 {
+  background-image: url(../images/item2.JPG);
+}
+
+.gallery-wrap .item-3 {
+  background-image: url(../images/ketua-karang-taruna.JPG);
+}
+
+.gallery-wrap .item-4 {
+  background-image: url(../images/hero2.JPG);
+}
+
+.gallery-wrap .item-5 {
+  background-image: url(../images/hero3.JPG);
+}
+
+/* ========== .Galeri ========== */
+/* ============================ */
+/* ========== Page ========== */
+/* ============================ */
+.card.page {
+  padding: 2%;
+  min-height: 70vh;
+  border: none;
+}
+
+/* ========== .Page ========== */
+/* ============================ */
+/*========== Media Query ==========*/
+@media (min-width: 1025px) {
+  .navbar {
+    height: 2.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel .carousel-inner .overlay .caption {
+    margin-top: 30%;
+  }
+  .carousel .carousel-inner .overlay .caption2 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px), (width: 768px) {
+  .navbar {
+    padding-top: 5px;
+  }
+  .navbar img {
+    width: 17px;
+    height: 23px;
+  }
+  .navbar .navbar-brand {
+    font-size: 15px;
+    margin-right: auto;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    height: 25px;
+    width: 35px;
+  }
+  .carousel .carousel-inner .overlay .caption {
+    margin-top: 30%;
+  }
+  .carousel .carousel-inner .overlay .caption img {
+    width: 36px;
+    height: 48px;
+  }
+  .carousel .carousel-inner .overlay .caption h5 {
+    font-size: 30px;
+  }
+  .carousel .carousel-inner .overlay .caption p {
+    font-size: 15px;
+  }
+  .carousel .carousel-inner .overlay .caption2 {
+    display: none;
+  }
+  .carousel .carousel-inner .carousel-item {
+    -webkit-transition: opacity .1s ease-out, -webkit-transform 1s ease;
+    transition: opacity .1s ease-out, -webkit-transform 1s ease;
+    transition: transform 1s ease, opacity .1s ease-out;
+    transition: transform 1s ease, opacity .1s ease-out, -webkit-transform 1s ease;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .film .overlay-3 p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .sosial-media img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

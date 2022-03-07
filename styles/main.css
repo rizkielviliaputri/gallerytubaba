@@ -1,0 +1,634 @@
+/*========== Font Family ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll;
+}
+
+/*========== .Navbar (Page : disemua page ada ) ==========*/
+.navbar {
+  backdrop-filter:blur(20px);
+  height: 50px;
+}
+
+.navbar #logorz1 {
+    width: 150px;
+    right: 10px;
+}
+
+.navbar #navb ul li a {  
+    color: #FFFFFF;
+}
+
+.navbar #navb ul li a.active {
+  color: #;
+}
+
+.navbar #navb ul li a:hover {
+  color: #E3AC59;
+}
+
+.navbar #navb .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar #navb .dropdown .dropdown-menu {
+  display: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* Links inside the dropdown */
+}
+
+.navbar #navb .dropdown .dropdown-menu .dropdown-item {
+  color: black;
+}
+
+.navbar #navb .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #66182A;
+  background-color:  #E3AC59;
+}
+
+.navbar #navb .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar  .read-more button {
+  background-color: #EE143A;
+  color: #FFFFFF;
+  border: none;
+}
+
+.navbar  .read-more button p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.navbar  .read-more button:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  background-color: #d10e2f;
+}
+
+.navbar #navb .read-more button:hover p i {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+/* End */
+
+
+/*========== .Carousel (Page: index.html) ==========*/
+.carousel {
+  overflow: hidden;
+}
+
+.carousel .carousel-indicators {
+  margin-bottom: 2px;
+  top:90%;
+  left: -70%;
+}
+
+.carousel .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.carousel .carousel-inner .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.carousel .carousel-inner .overlay .caption {
+  top: 20%;
+  left: 10%;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 3;
+}
+
+.carousel .carousel-inner .overlay .caption h4 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 50px;  
+  color: #FFFFFF;
+  text-shadow: 0 2px 5px rgba(65, 64, 66, 0.6);
+}
+
+.carousel .carousel-inner .overlay .caption p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #FFFFFF;
+  text-shadow: 0 2px 5px rgba(65, 64, 66, 0.6);
+  margin-bottom: -1%;
+  margin-top: -2%;
+}
+
+.carousel .carousel-inner .carousel-item {
+  -webkit-transition: opacity .1s ease-out, -webkit-transform 1s ease;
+  transition: opacity .1s ease-out, -webkit-transform 1s ease;
+  transition: transform 1s ease, opacity .1s ease-out;
+  transition: transform 1s ease, opacity .1s ease-out, -webkit-transform 1s ease;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel .carousel-inner .carousel-item .read-more .btn {
+  background-color: #EE143A;
+  border: none;
+}
+
+.carousel .carousel-inner .carousel-item .read-more .btn:hover {
+  background-color: #d10e2f;
+}
+
+/* End */
+
+/*========== .Menu Kegiatan/Pariwisata (Page : index.html) ==========*/
+.menurz {
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+.menurz .container {
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.menurz .tab {
+  overflow: hidden;
+}
+
+.menurz .tab button {
+  height: 110px;
+  width: 110px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    border: grey;
+}
+
+
+.menurz .tab button img{
+  height: 80px;
+  width: 80px;
+}
+.menurz .tab button:hover {
+  color: #fff;
+}
+
+.menurz .tab button.active {
+  background-color: #66182A;
+}
+
+.menurz .tab  a {
+  height: 110px;
+  width: 110px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    border: grey; 
+}
+
+.menurz .tab a img{
+  height: 80px;
+  width: 80px;
+}
+
+
+.menurz h6  {
+  color: #66182A; 
+}
+
+.menurz .tabcontent .judulgaleri h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;  
+}
+
+.menurz .tabcontent .judulgaleri a {
+  font-size: 20px;
+  color: #000; 
+}
+
+.menurz .tabcontent .berita-isi  img {
+  width: 110%;
+  height: 140px;
+  margin: 1px;
+  border-radius: 10px;
+}
+.menurz .tabcontent .berita-isi:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 05s;
+  transition: 0.5s; 
+}
+
+.menurz .tabcontent .read-more a {
+  background-color: #EE143A;
+  color:#fff;
+  border: none;
+  margin: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.menurz .tabcontent .read-more a:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  background-color: #d10e2f;
+}
+
+.menurz .tabcontent .read-more a:hover  i {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+/* End */
+
+/*========== .Video (Page : index.html) ========== */
+.film {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+/* End */
+
+
+/* ==== .Kegiatan/Pariwisata (page : kegiatan.html dan pariwisata.html) ==== */
+.next .cardrz {
+  height: 1030px;
+  width: 97%;
+  background-color: #ECEBEB;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.next .cardrz .card {
+  width: 30px;
+  height: 280px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+  }
+
+.next .card img{
+  width: 100%;
+  height: 220px;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.next .card:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 05s;
+  transition: 0.5s;
+}
+
+.next .cardrz .cardvid {
+  width: 40%;
+  height: 350px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 560px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #fff; 
+}
+
+.next .cardrz .cardvid iframe{  
+  width: 100%;
+  height: 300px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.next .cardrz .cardvid:hover video {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 05s;
+  transition: 0.5s; 
+}
+
+.next .cardrz p{
+margin-left: 10px;
+}
+
+.next .cardrz .cardvid p{
+margin-left: 10px;
+margin-top: -20px;
+}
+
+.next .cardrz  .card a {
+margin-bottom: 10px;
+}
+
+.next .cardrz .card .text1 h6 {
+width: 100px;
+position: absolute;
+margin-left: 50px;
+margin-top: -150px;
+margin-bottom: 20px;
+margin-right: 40px;
+color: #FFFF;
+background-color: #66182A;
+opacity: 0.5;
+}
+
+/* End */
+
+
+/* ==== .Kegiatan/Pariwisata FIX (page : kegiatanfix.html dan pariwisatafix.html) ==== */
+.nextfix .cardrz {
+  height: 1090px;
+  width: 97%;
+  background-color: #ECEBEB;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.nextfix .cardrz .card {
+  width: 30px;
+    height: 310px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+    border-radius: 10px;
+  }
+
+
+.nextfix .card img{ 
+  width: 100%;
+  height: 220px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px; 
+}
+
+.nextfix .card:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 05s;
+  transition: 0.5s;  
+}
+
+.nextfix .cardrz .cardvid {
+  width: 40%;
+  height: 350px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 560px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #fff; 
+}
+
+.nextfix .cardrz .cardvid iframe{  
+  width: 100%;
+  height: 300px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.nextfix .cardrz .cardvid:hover video {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 05s;
+  transition: 0.5s;  
+}
+
+.nextfix .cardrz .cardvid p{
+  margin-left: 10px;
+  margin-top: -20px;
+  }
+
+.nextfix .cardrz p{
+margin-left: 10px;
+}
+
+.nextfix .cardrz  .card a {
+margin-bottom: 10px;
+}
+
+.nextfix .cardrz  .card .text1 h6 {
+width: 100px;
+position: absolute;
+margin-left: 50px;
+margin-top: -150px;
+margin-bottom: 20px;
+margin-right: 40px;
+color: #FFFF;
+background-color: #66182A;
+opacity: 0.5;
+}
+
+
+/* End */
+
+
+/* ==== .Login/Register (Page : login.html & register.html) ===== */
+@font-face {
+  font-family: "ftubaba";
+  src: url('tubabareguler.ttf'),
+  url('tubabareguler.ttf') format('truetype');
+  }
+
+.loginreg p {
+  font-family: "ftubaba";
+  font-size: 40px;
+  color: #66182A;
+  }
+
+.loginreg1 {
+  height: 420px;
+  width: 40%;
+  background-color: #ECEBEB;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.loginreg1 .card {
+  height: 360px;
+  width: 90%;
+  background-color: #FFFF;
+  border-style: solid;
+  border-width: medium;
+  border-color: #CBCBCA;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  }
+
+
+.loginreg1 .card h4 {
+  margin-top: 15px;
+  }
+  
+
+
+.loginreg1 .card button {
+  width: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 240px;
+  }
+
+  /* End */
+
+
+/* ===== .Footer (Page : disemua page ada) ===== */
+
+footer {
+  position: relative;
+}
+
+footer .footrz {
+  background-color: #66182A;
+  width: 100%;
+  height: 38vh;
+  position: absolute;
+  z-index: 2;
+}
+
+footer .footrz h5 {
+  font-size: 0.8em;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footrz .footrz-icon a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+footer .footrz .footrz-icon a:hover {
+  color: #E3AC59;
+}
+
+footer .footrz .copyrightrz p {
+  
+  font-size: 0.8em;
+  color: #fff;
+}
+
+/* End */
+
+
+
+
+/*========== Media Query ==========*/
+@media (min-width: 1025px) {
+  .navbar {
+    height: 2.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel .carousel-inner .overlay .caption {
+    margin-top: 30%;
+  }
+  .carousel .carousel-inner .overlay .caption2 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px), (width: 768px) {
+  .navbar {
+    padding-top: 5px;
+  }
+  .navbar img {
+    width: 17px;
+    height: 23px;
+  }
+  .navbar .navbar-brand {
+    font-size: 15px;
+    margin-right: auto;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    height: 25px;
+    width: 35px;
+  }
+  .carousel .carousel-inner .overlay .caption {
+    margin-top: 30%;
+  }
+  .carousel .carousel-inner .overlay .caption img {
+    width: 36px;
+    height: 48px;
+  }
+  .carousel .carousel-inner .overlay .caption h5 {
+    font-size: 30px;
+  }
+  .carousel .carousel-inner .overlay .caption p {
+    font-size: 15px;
+  }
+  .carousel .carousel-inner .overlay .caption2 {
+    display: none;
+  }
+  .carousel .carousel-inner .carousel-item {
+    -webkit-transition: opacity .1s ease-out, -webkit-transform 1s ease;
+    transition: opacity .1s ease-out, -webkit-transform 1s ease;
+    transition: transform 1s ease, opacity .1s ease-out;
+    transition: transform 1s ease, opacity .1s ease-out, -webkit-transform 1s ease;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  footer .sosial-media img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
